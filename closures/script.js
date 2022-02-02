@@ -1,4 +1,4 @@
-// function along with its lexical environment bundled together forms the closure
+// function along with its lexical environment bundled together forms the closure.In other words, a closure gives you access to an outer function’s scope from an inner function
 
 function x() {
     var a = 7;
