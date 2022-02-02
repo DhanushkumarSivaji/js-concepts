@@ -1,4 +1,4 @@
-// we can use multiple statement together in a blob so that javascript expects one statement.
+// we can use multiple statement together in a block so that javascript expects one statement.
 if(true){
     //compound statement
     var a = 10;
