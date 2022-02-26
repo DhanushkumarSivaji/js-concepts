@@ -16,4 +16,4 @@ printFullName.apply(name,["Karaikal","Pondicherry"])
 "Bind - here it binds the function to the variable which can be invoked later"
 let fullName = printFullName.bind(name,"Karaikal","Pondicherry");
 
-fullName()
+fullName();
