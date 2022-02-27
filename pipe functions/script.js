@@ -21,5 +21,3 @@ let pipe = function(...fns){
 let evaluate = pipe(addByFive,subtractByTwo,multiplyByFour);
 
 console.log(evaluate(5))
-
-
