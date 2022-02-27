@@ -1,5 +1,5 @@
-const loggerFunc = () => {
-    console.count("Throttled Function");
+const loggerFunc = (name="dhanush") => {
+    console.log(`Throttled Function ${name}`);
   }
   
   const throttle = (fn, limit) => {
