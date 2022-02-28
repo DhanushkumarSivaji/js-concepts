@@ -1,9 +1,9 @@
-function memoize(fn,context){
+function memoize(fn){
     const res = {};
      return function(...args){
          var argsCache = JSON.stringify(args)
          if(!res[argsCache]){
-             res[argsCache] = fn.call(context || this,...args)
+             res[argsCache] = fn.call(this, ...args)
          } 
         return res[argsCache]
      }
@@ -23,3 +23,4 @@ console.timeEnd("First call")
 console.time("Second call")
 console.log(memoizedClumzyProduct(5,5));
 console.timeEnd("Second call")
+
