@@ -5,18 +5,7 @@ function debounce(func, timeout = 300){
       timer = setTimeout(() => { func.apply(this, args); }, timeout);
     };
   }
-  function saveInput(){
-    console.log('Saving data');
+  function saveInput(val){
+    console.log('Saving data',val);
   }
-  const processChange = debounce(() => saveInput());  
-
-
-  function multiply(x) {
-   return function(y){
-     console.log(x * y)
-   }
-  }
-
-  let multiplyByTwo = multiply(2)
-
-  multiplyByTwo(3)
+  const processChange = debounce(() => saveInput("hello"));  
