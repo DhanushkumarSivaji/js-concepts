@@ -20,3 +20,18 @@ let name = {
   
   let printMyName2 = printName.mybind(name, "Dehradun", "Uttarakhand");
   printMyName2( "India");
+
+
+
+  function memeoizing(func) {
+      let result = {}
+
+      return (...args) => {
+          let resCache = JSON.stringify(args)
+
+          if(!result[resCache]){
+            result[resCache] = func.call(this,...args)
+          }
+          return result[resCache]
+      }
+  }

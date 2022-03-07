@@ -205,3 +205,12 @@ function getMostFrequent(arr) {
  //  console.log(hashmap)
  return Object.keys(hashmap).reduce((a, b) => hashmap[a] > hashmap[b] ? a : b)
  }
+
+
+ //polyfill for bind
+ Function.prototype.myBind = function (...args1) {
+    let func = this
+     return (...args2) => {
+        func.apply(args1[0],[...args1.slice(0),...args2])
+     }
+ }
