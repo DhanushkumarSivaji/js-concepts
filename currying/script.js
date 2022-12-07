@@ -13,9 +13,6 @@
 
 // multiplyByThree(5)
 
-
-
-
 //function currying using closures
 
 let multiply = function(x) {
@@ -23,12 +20,8 @@ let multiply = function(x) {
         console.log(x * y)
     }
 }
-
 let multiplyByTwo = multiply(2)
-
 multiplyByTwo(3)
-
 let multiplyByThree = multiply(3)
-
 multiplyByThree(3)
 

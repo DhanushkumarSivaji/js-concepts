@@ -15,10 +15,36 @@ console.log(z())
 // destroyed but because of closure we can achieve this
 
 
+function z1(){
+    var b = 100;
+    function x(){
+        var a = 7;
+        function y(){
+            console.log(a,b)
+        }
+        y()
+    }
+    x()
+}
+
+z1()
+
+// uses of closure
+
+// 1. Module Design Pattern
+// 2. Currying
+// 3. Functions like once
+// 4. memoize
+// 5. maintaining state in async world
+// 6. setTimeouts
+// 7. Iterators
+// 8. and many more
+
+
 
 // Disadvantages of closure
 
- 
+ // Over consumption of memory in closures, whenever a closure is formed there is a over consumption of memory and those closure variables are not garbage collected till the program expires
 
 // Closures prevent variables inside functions from being released by memory. These variables will occupy memory and consume a lot of memory, which may lead to memory leakage
 

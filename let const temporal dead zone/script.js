@@ -24,3 +24,10 @@ c = 12;
 const d = 10;
 
 d = 5 // TypeError Assignment to a constant variable.
+
+
+// how to avoid temporal dead zone ?
+
+// always put declarations and initializations at the top of the file / code.
+
+// reference error => when JS engine tries to find out a variable inside the memory space and you cannot access it
