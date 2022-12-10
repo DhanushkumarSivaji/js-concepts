@@ -47,5 +47,5 @@ let a = 20;
 var a = 20;
 
 {
-    let a = 20;s
+    let a = 20;
 }

@@ -33,6 +33,7 @@ Function.prototype.myBind = function (...args1) {
      }
  }
 
+ "First argument will always be the reference to this"
 
 "Call - here arguments to the functions are passed in comma seperated conditions "
 printFullName.myCall(name,"Karaikal","Pondicherry")
@@ -46,3 +47,4 @@ let fullName = printFullName.bind(name,"Karaikal","Pondicherry");
 fullName();
 
 
+// call => is called function borrowing
